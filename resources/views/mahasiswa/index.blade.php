@@ -51,7 +51,7 @@
     </tr>
     @endforeach
 </table>
-
+<!-- pagination -->
     {!! $mahasiswa->links()!!}
 
 @endsection
