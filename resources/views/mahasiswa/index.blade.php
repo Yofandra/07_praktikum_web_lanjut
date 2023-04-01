@@ -5,6 +5,10 @@
         <div class="pull-left mt-2">
             <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
         </div>
+        <form action="{{ route('mahasiswa.index') }}" method="GET" role="search">
+            <input type="text" name="search" placeholder="Cari Mahasiswa">
+            <button type="submit">Search</button>
+        </form>
         <div class="float-right my-2">
             <a class="btn btnsuccess" href="{{ route('mahasiswa.create') }}"> Input Mahasiswa</a>
         </div>
@@ -52,6 +56,6 @@
     @endforeach
 </table>
 <!-- pagination -->
-    {!! $mahasiswa->links()!!}
+{!! $mahasiswa->links()!!}
 
 @endsection
